@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 import { ViewAllRailsComponent } from './view-all-rails/view-all-rails.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AdddataComponent } from './adddata/adddata.component';
 const appRoutes:Routes=[
   {
     path:"",component:ViewAllRailsComponent
+  },{
+    path:"add",component:AdddataComponent
   }
 ]
 
@@ -18,7 +21,8 @@ const appRoutes:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    ViewAllRailsComponent
+    ViewAllRailsComponent,
+    AdddataComponent
   ],
   imports: [
     BrowserModule,
